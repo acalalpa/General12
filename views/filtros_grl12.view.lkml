@@ -43,8 +43,17 @@ view: filtros_grl12 {
     sql: ${TABLE}.Cuenta ;;
   }
 
-  dimension: fecha {
-    type: string
+  dimension_group: Fecha {
+    type: time
+    timeframes: [
+      raw,
+      time,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
     sql: ${TABLE}.Fecha ;;
   }
 
