@@ -1,6 +1,6 @@
 view: filtros_grl12 {
   sql_table_name: broxelco_rdg.FiltrosGRL12 ;;
-  drill_fields: [id]
+  drill_fields: [id,clasificacion_cliente,clave_cliente,procesador]
 
   dimension: id {
     primary_key: yes
